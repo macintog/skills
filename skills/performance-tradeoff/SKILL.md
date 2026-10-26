@@ -1,9 +1,11 @@
 ---
 name: performance-tradeoff
-description: Judge performance or resource claims on real hardware: benchmark design or review, latency, throughput, memory or headroom numbers, and accept-or-reject decisions on optimizations. Not for refactors with no resource claim.
+description: Judge performance or resource claims on real hardware, and design the test, replay, evaluation, benchmark, soak or watch before it runs: latency, throughput, memory or headroom numbers, and accept-or-reject decisions on optimizations. Not for refactors with no resource claim.
 ---
 
 # Performance tradeoff
+
+Before a test, replay, evaluation, benchmark, soak or watch runs, write down in one place: the question it settles and the decision that changes; what in the project's current plan or next host makes the number moot; the smallest input that answers it, located from indexes, logs or labels rather than scanned for; the mode (offline, seeking and batched, unless the property is wall-clock); the hardware shape (batched, pipelined, the fastest engine the target has); the estimate as input ÷ measured throughput × runs, from a smoke run; and the stop rule. A run with no written plan is the failure this skill exists to prevent. Thresholds: over about 15 device-minutes, or a 1× replay longer than the event it tests, get the coordinator's or operator's OK first; a serial batch-1 loop on an idle accelerator is a defect to fix before scaling, not a budget.
 
 Before trusting or reporting a number, check:
 
