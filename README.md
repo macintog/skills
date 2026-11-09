@@ -1,4 +1,4 @@
-# codex-spine
+# skills
 
 Five agent skills, plus two standing instructions, for work that goes badly when a model freestyles.
 Each skill is a plain folder with a `SKILL.md`, so it works in Codex and in other agents that read
@@ -61,9 +61,9 @@ Copy or symlink the skill folders you want into your agent's skills directory:
 - Claude Code: `~/.claude/skills/`
 
 ```sh
-git clone https://github.com/macintog/codex-spine.git
+git clone https://github.com/macintog/skills.git
 mkdir -p ~/.agents/skills
-ln -s "$PWD/codex-spine/skills/chart-integrity" ~/.agents/skills/chart-integrity
+ln -s "$PWD/skills/skills/chart-integrity" ~/.agents/skills/chart-integrity
 ```
 
 For Claude Code, use `~/.claude/skills` in the last two lines instead.

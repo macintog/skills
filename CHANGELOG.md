@@ -1,6 +1,12 @@
 # Changelog
 
-All notable user-visible changes to `codex-spine` should be tracked here.
+All notable user-visible changes to this repository should be tracked here.
+
+## Unreleased
+
+- The repository is renamed from `codex-spine` to `skills`. GitHub redirects the old URLs, so
+  existing clones keep working; `git remote set-url origin https://github.com/macintog/skills.git`
+  points one at the new name.
 
 ## 0.6.2
 
