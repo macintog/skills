@@ -2,11 +2,14 @@
 
 All notable user-visible changes to `codex-spine` should be tracked here.
 
-## Unreleased
+## 0.6.2
 
 - `prose-quality` covers drafting as well as editing: a "Write to the reader" section (name the
   reader and their decision, use their words, let the screen set the length), figurative phrasing
   on the cut list, and a default prompt that says draft or revise.
+- `performance-tradeoff` writes a plan before a test, replay, benchmark or soak runs: the question
+  it settles and the decision it changes, the smallest input that answers it, an estimate from a
+  smoke run, and a stop rule. A run over about 15 device-minutes waits for an OK.
 - `performance-tradeoff` asks a claim that names a mechanism to show the counter that mechanism
   moves, in both arms; utilization is not work.
 

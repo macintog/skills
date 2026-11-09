@@ -10,7 +10,7 @@ the same format.
 | --- | --- |
 | [`chart-integrity`](skills/chart-integrity) | create or critique charts and dashboards whose comparisons someone will act on |
 | [`improve-codebase-architecture`](skills/improve-codebase-architecture) | audit a codebase for simplification: shallow modules, rules implemented twice, sibling paths that disagree |
-| [`performance-tradeoff`](skills/performance-tradeoff) | judge benchmark and resource claims: cold vs warm runs, async timing, overlapping memory counters |
+| [`performance-tradeoff`](skills/performance-tradeoff) | plan benchmarks before they run and judge resource claims: cold vs warm runs, async timing, overlapping memory counters |
 | [`prose-quality`](skills/prose-quality) | write, edit or review prose for its reader without changing claim strength, and remove AI-sounding patterns |
 | [`skill-audit`](skills/skill-audit) | prune a skill to what changes behavior, check routing overlap, and vet third-party skills before installing |
 
@@ -46,8 +46,8 @@ Each candidate went through a three-arm blind test on one model (Claude Opus 5.5
 skill, each with a planted trap, run with the long original skill, with a short rewrite, and with no
 guidance, then ranked by independent judges that did not know which was which. The short versions
 placed first in most tasks; the long originals often placed last because their ceremony leaked into
-the answers. What is published is what won. That is a small sample on a single model, so treat it as
-evidence for these versions, not a benchmark.
+the answers. What 0.6.0 published is what won; later changes are listed in the CHANGELOG. That is
+a small sample on a single model, so treat it as evidence for these versions, not a benchmark.
 
 Two earlier skills, `causal-explanation` and `change-impact`, lost to two plain lines and became the
 standing instructions above. `yeet` and `project-continuity` were retired with the managed
