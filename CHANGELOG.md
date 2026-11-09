@@ -2,6 +2,14 @@
 
 All notable user-visible changes to `codex-spine` should be tracked here.
 
+## Unreleased
+
+- `prose-quality` covers drafting as well as editing: a "Write to the reader" section (name the
+  reader and their decision, use their words, let the screen set the length), figurative phrasing
+  on the cut list, and a default prompt that says draft or revise.
+- `performance-tradeoff` asks a claim that names a mechanism to show the counter that mechanism
+  moves, in both arms; utilization is not work.
+
 ## 0.6.1
 
 - The history standing instruction lists session transcripts among the sources to check, matching

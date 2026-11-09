@@ -11,7 +11,7 @@ the same format.
 | [`chart-integrity`](skills/chart-integrity) | create or critique charts and dashboards whose comparisons someone will act on |
 | [`improve-codebase-architecture`](skills/improve-codebase-architecture) | audit a codebase for simplification: shallow modules, rules implemented twice, sibling paths that disagree |
 | [`performance-tradeoff`](skills/performance-tradeoff) | judge benchmark and resource claims: cold vs warm runs, async timing, overlapping memory counters |
-| [`prose-quality`](skills/prose-quality) | edit or review writing without changing claim strength, and remove AI-sounding patterns |
+| [`prose-quality`](skills/prose-quality) | write, edit or review prose for its reader without changing claim strength, and remove AI-sounding patterns |
 | [`skill-audit`](skills/skill-audit) | prune a skill to what changes behavior, check routing overlap, and vet third-party skills before installing |
 
 ## Standing instructions

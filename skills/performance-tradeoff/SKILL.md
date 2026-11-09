@@ -16,6 +16,7 @@ Before trusting or reporting a number, check:
 - **Raw-value arithmetic.** Relative change = (candidate − baseline) / baseline, direction stated; recheck supplied percentages. No speedup against a timeout or OOM.
 - **One memory scope.** Don't sum overlapping counters (a unified-memory footprint may already include GPU allocations). Headroom is peak versus what the target actually has free; note the sampling interval.
 - **Phase is not end to end.** A faster component isn't a faster request until measured; overlapping work doesn't add serially.
+- **Mechanism, not just clock.** A claim that names a cause (cache fit, fewer DRAM trips, fewer launches, fewer allocations) shows the counter that cause moves, in both arms. Utilization is not work: a core at 100 % can be mostly stalled on memory, so CPU % and instruction count neither bound nor explain the cost, and trading instructions for fewer cold memory accesses is usually a win. Where cycles go needs a host that exposes counters (bare metal, a Mac with Instruments), not a cloud VM.
 
 Decide in order: correctness and quality; whether the change enables a supported workload the baseline fails or nearly fails; absolute user-visible cost; maintenance cost. A resource reduction that enables nothing measured doesn't justify a latency, quality or complexity cost. Set thresholds and margins before seeing candidate results.
 
