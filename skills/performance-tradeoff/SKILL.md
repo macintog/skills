@@ -1,6 +1,6 @@
 ---
 name: performance-tradeoff
-description: Judge performance or resource claims on real hardware, and design the test, replay, evaluation, benchmark, soak or watch before it runs: latency, throughput, memory or headroom numbers, and accept-or-reject decisions on optimizations. Not for refactors with no resource claim.
+description: "Judge performance or resource claims on real hardware, and design the test, replay, evaluation, benchmark, soak or watch before it runs: latency, throughput, memory or headroom numbers, and accept-or-reject decisions on optimizations. Not for refactors with no resource claim."
 ---
 
 # Performance tradeoff
